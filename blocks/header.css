@@ -1,0 +1,40 @@
+.header {
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #D6D6D6;
+  box-sizing: border-box;
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.header__login {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header__login-link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+
+  margin-right: 35px;
+
+  transition: color .3s ease-in-out;
+}
+
+.header__login-link:last-child {
+  margin-right: 0;
+}
+
+.header__login-link:hover {
+  cursor: pointer;
+  color: #01996D;
+}

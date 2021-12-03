@@ -1,0 +1,32 @@
+.menu {
+  margin-left: 172px;
+}
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #292929;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 72px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #292929;
+
+  transition: color .3s ease-in-out;
+}
+
+.menu__link:hover {
+  cursor: pointer;
+  color: #01996D;
+}

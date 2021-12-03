@@ -1,0 +1,117 @@
+.how-it-works {
+  padding-top: 169px;
+  padding-bottom: 51px;
+  box-sizing: border-box;
+}
+
+.how-it-works__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.how-it-works__headings {
+  max-width: 584px;
+}
+
+.how-it-works__title {
+  margin: 0;
+  margin-bottom: -3px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 157%;
+}
+
+.how-it-works__subtitle {
+  margin: 0;
+
+  font-family: "Georgia";
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 157%;
+  color: #01996D;
+}
+
+.how-it-works__text {
+  max-width: 671px;
+  margin-top: 58px;
+}
+
+.how-it-works__paragraph {
+  margin: 0;
+
+  font-weight: 500;
+  line-height: 150%;
+}
+
+/* Steps
+=================== */
+.steps {
+  list-style: none;
+  padding: 0;
+  margin-top: 52px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 390px);
+  column-gap: 95px;
+}
+
+.step {
+  width: 390px;
+}
+
+.step:nth-child(2) {
+  margin-top: 287px;
+}
+
+.step:nth-child(3) {
+  margin-top: 54px;
+}
+
+.step__heading {
+  position: relative;
+  margin: 0;
+  padding: 135px 0 0 88px;
+
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.step__heading_type_step-two {
+  padding-left: 77px;
+}
+
+.step__heading_type_step-three {
+  padding-left: 124px;
+}
+
+.step__heading::before {
+  content: attr(data-number);
+  position: absolute;
+  top:0;
+  left: 0;
+
+  font-weight: normal;
+  font-size: 150px;
+  line-height: 150%;
+  color: rgba(1, 153, 109, 0.2);
+}
+
+.step__text {
+  margin-top: 55px;
+  margin-bottom: 60px;
+}
+
+.step__paragraph {
+  margin: 0;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.step__image {
+  border-radius: 12px;
+  width: 100%;
+  object-fit: cover;
+}

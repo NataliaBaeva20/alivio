@@ -7,6 +7,10 @@
 @import "../blocks/button.css";
 @import "../blocks/intro.css";
 @import "../blocks/how-it-works.css";
+@import "../blocks/story.css";
+@import "../blocks/product.css";
+@import "../blocks/card.css";
+@import "../blocks/footer.css";
 
 .none {
   display: none !important;

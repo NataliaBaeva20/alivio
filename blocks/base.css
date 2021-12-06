@@ -7,9 +7,13 @@
 }
 
 .container {
-  width: 1400px;
+  max-width: 1400px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+.container_size_wide {
+  max-width: 1510px;
 }

@@ -5,15 +5,18 @@
 
   color: #fff;
 }
+
 .story__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .story__description {
   max-width: 580px;
   margin-right: 31px;
 }
+
 .story__heading {
   margin: 0;
   margin-bottom: 33px;
@@ -23,30 +26,52 @@
   font-size: 50px;
   line-height: 157%;
 }
+
 .story__text {
   font-weight: 600;
   font-size: 25px;
   line-height: 157%;
-}
-.story__paragraph {
-  margin: 0;
   margin-bottom: 57px;
 }
+
+.story__paragraph {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.story__paragraph:last-child {
+  margin: 0;
+}
+
 .story__button {
   display: flex;
 }
 
-.story__video {
-  width: 895px;
-  height: 516px;
+.story__video-wrapper {
+  max-width: 895px;
+  position: relative;
   border-radius: 16px;
   overflow: hidden;
-  position: relative;
 }
 
-.story__video-image {
+.story__video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  /* border-radius: 16px; */
+  height: 100%;
+  background-color: rgba(0, 0, 0, .2);
+  z-index: 1;
+  transition: opacity .2s ease-in-out;
+}
+
+.story__video-overlay_hidden {
+  opacity: 0;
+}
+
+.story__video {
+  width: 100%;
+  vertical-align: bottom;
 }
 
 .story__button-play {
@@ -54,6 +79,7 @@
   background-color: transparent;
   background-image: url(../images/play-btn.svg);
   background-size: cover;
+  padding: 0;
 
   width: 80.83px;
   height: 80.83px;
@@ -61,4 +87,55 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* z-index: 1; */
+}
+
+.story__button-play_paused {
+  background-image: url(../images/pause-btn.svg);
+}
+
+.story__button-play:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1299px) {
+  .story {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  .story__heading {
+    font-size: 40px;
+    line-height: 140%;
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  .story__row {
+    flex-direction: column-reverse;
+  }
+
+  .story__description {
+    margin: 30px 0 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .story {
+    padding: 60px 0;
+  }
+
+  .story__text {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .story__heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }

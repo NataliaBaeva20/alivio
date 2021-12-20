@@ -1,0 +1,35 @@
+.login-block {
+  display: flex;
+  align-items: center;
+}
+
+.login-block_place_header {
+
+}
+
+.login-block__link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+
+  margin-right: 35px;
+
+  transition: color .3s ease-in-out;
+}
+
+.login-block__link:last-child {
+  margin-right: 0;
+}
+
+.login-block__link:hover {
+  cursor: pointer;
+  color: #01996D;
+}
+
+@media screen and (max-width: 991px) {
+  .login-block_place_header {
+    display: none;
+  }
+}

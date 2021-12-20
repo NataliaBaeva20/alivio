@@ -12,29 +12,30 @@
   /* justify-content: space-between; */
 }
 
+.header__menu {
+  margin-left: 172px;
+}
+
 .header__login {
-  display: flex;
-  align-items: center;
   margin-left: auto;
 }
 
-.header__login-link {
-  text-decoration: none;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000;
+@media screen and (max-width: 1399px) {
+  .header__row {
+    justify-content: space-between;
+  }
 
-  margin-right: 35px;
+  .header__menu {
+    margin-left: 0;
+  }
 
-  transition: color .3s ease-in-out;
+  .header__login {
+    margin-left: 0;
+  }
 }
 
-.header__login-link:last-child {
-  margin-right: 0;
-}
-
-.header__login-link:hover {
-  cursor: pointer;
-  color: #01996D;
+@media screen and (max-width: 991px) {
+  .header__menu {
+    display: none;
+  }
 }

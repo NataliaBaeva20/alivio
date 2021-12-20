@@ -6,6 +6,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.body_scroll_hidden {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1400px;
   padding-left: 15px;
@@ -16,4 +20,22 @@
 
 .container_size_wide {
   max-width: 1510px;
+}
+
+@media screen and (max-width: 1399px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1509px) {
+  .container_size_wide {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .body {
+    font-size: 18px;
+  }
 }

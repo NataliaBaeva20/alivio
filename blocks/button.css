@@ -24,3 +24,16 @@
   color: #fff;
   opacity: .8;
 }
+
+@media screen and (max-width: 991px) {
+  .button {
+    padding: 13px 35px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .button_size_big {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}

@@ -1,21 +1,24 @@
 .product {
   padding-top: 120px;
   padding-bottom: 168px;
-
 }
+
 .product__row {
   display: flex;
   justify-content: space-between;
-
-
 }
+
 .product__image-wrapper {
   position: relative;
   padding: 0 0 74px 60px;
+  margin-right: 30px;
 }
 
 .product__image {
   border-radius: 18px;
+  flex: 1 0 auto;
+  flex-basis: 50%;
+  width: 100%;
 }
 
 /* Block for card */
@@ -57,4 +60,54 @@
 
 .product__button {
   display: flex;
+}
+
+@media screen and (max-width: 1299px) {
+  .product {
+    padding-top: 90px;
+    padding-bottom: 168px;
+  }
+
+  .product__image-wrapper {
+    flex: 1 0 auto;
+    flex-basis: 50%;
+  }
+
+  .product__subtitle {
+    font-size: 40px;
+    line-height: 140%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .product {
+    padding: 70px 0;
+  }
+
+  .product__row {
+    flex-direction: column-reverse;
+  }
+
+  .product__content {
+    margin-bottom: 30px;
+  }
+
+  .product__image-wrapper {
+    padding: 0;
+    margin-right: 0;
+  }
+
+  .product__card {
+    position: relative;
+    margin-top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .product__subtitle {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
